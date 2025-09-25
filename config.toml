@@ -7,10 +7,10 @@ parallel-jobs = 1
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 arch = "both"
 build-mode = "both"
 version = "20.13.41"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
@@ -20,10 +20,10 @@ excluded-patches = "'Custom branding icon for YouTube' 'Theme'"
 patcher-args = "-e 'Custom branding name for YouTube' -OappName=YouTube -e 'Settings for YouTube' -OrvxSettingsLabel=Revanced Settings"
 
 [YT-Music]
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 arch = "both"
 build-mode = "both"
 version = "80.30.54"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 patches-source = "anddea/revanced-patches"
 integrations-source = "anddea/revanced-integrations"
 cli-source = "anddea/revanced-cli"
@@ -33,13 +33,17 @@ patcher-args = "-e 'Custom branding name for YouTube Music' -OappNameNotificatio
 
 [Reddit]
 apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit/"
+arch = "both"
+version = "auto"
 patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 patches-version = "dev"
+patcher-args = "-e 'Settings for Reddit' -OrvxSettingsLabel=Revanced Settings"
 
 [GooglePhotos]
-build-mode = "both"
-arch = "both"
-version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
+arch = "both"
+build-mode = "both"
+version = "auto"
+included-patches = "'Enable DCIM folders backup control'"
