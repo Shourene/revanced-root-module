@@ -23,6 +23,8 @@ patcher-args = """\
 -OappName=YouTube \
 -e 'Settings for YouTube' \
 -OrvxSettingsLabel='Revanced Settings' \
+-e 'Theme' \
+-OdarkThemeBackgroundColor=#000000FF \
 """
 
 [YT-Music]
@@ -48,9 +50,8 @@ uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 arch = "all"
 build-mode = "apk"
 version = "auto"
-patches-source = "inotia00/revanced-patches"
-integrations-source = "inotia00/revanced-integrations"
-cli-source = "inotia00/revanced-cli"
+patches-source = "anddea/revanced-patches"
+integrations-source = "anddea/revanced-integrations"
 patches-version = "dev"
 patcher-args = """\
 -e 'Settings for Reddit' \
