@@ -1,5 +1,5 @@
 enable-magisk-update = true # set this to false if you do not want to receive updates for the module in magisk app
-parallel-jobs = 1
+parallel-jobs = 2
 
 # add 'enabled = false' for not patching a specific app or remove it from the config
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
@@ -7,42 +7,61 @@ parallel-jobs = 1
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
+# apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 arch = "both"
 build-mode = "both"
 version = "20.13.41"
 patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 patches-version = "dev"
 included-patches = "'Custom header for YouTube' 'Force hide player buttons background' 'Hide Shorts dimming' 'Hide shortcuts' 'Return YouTube Username'"
 excluded-patches = "'Custom branding icon for YouTube' 'Theme'"
-patcher-args = "-e 'Custom branding name for YouTube' -OappName=YouTube -e 'Settings for YouTube' -OrvxSettingsLabel=Revanced Settings"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+patcher-args = """\
+-e 'Custom branding name for YouTube' \
+-OappName=YouTube -e 'Settings for YouTube' \
+-OrvxSettingsLabel=Revanced Settings \
+"""
 
 [YT-Music]
+app-name = "YT Music"
+# apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 arch = "both"
 build-mode = "both"
-version = "8.30.54"
+version = "20.13.41"
 patches-source = "anddea/revanced-patches"
 patches-version = "dev"
 included-patches = "'Custom header for YouTube Music' 'Disable music video in album' 'Hide overlay filter' 'Hide player overlay filter'"
-patcher-args = "-e 'Custom branding name for YouTube Music' -OappNameNotification=YouTube Music -OappNameLauncher=YT Music -e 'Settings for YouTube Music' -OrvxSettingsLabel=Revanced Settings"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+patcher-args = """\
+-e 'Custom branding name for YouTube Music' \
+-OappNameNotification=YouTube Music \
+-OappNameLauncher=YT Music \
+-e 'Settings for YouTube Music' \
+-OrvxSettingsLabel=Revanced Settings \
+"""
 
 [Reddit]
-arch = "both"
+# apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit/"
+uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+arch = "all"
+build-mode = "apk"
+version = "auto"
 patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 patches-version = "dev"
-patcher-args = "-e 'Settings for Reddit' -OrvxSettingsLabel=Revanced Settings"
-apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit/"
-uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+patcher-args = """\
+-e 'Settings for Reddit' \
+-OrvxSettingsLabel=Revanced Settings \
+"""
 
 [GooglePhotos]
+app-name = "Google Photos"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
+uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 arch = "both"
 build-mode = "both"
 version = "auto"
 included-patches = "'Enable DCIM folders backup control'"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
-uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
