@@ -20,8 +20,9 @@ included-patches = "'Custom header for YouTube' 'Force hide player buttons backg
 excluded-patches = "'Custom branding icon for YouTube' 'Theme'"
 patcher-args = """\
 -e 'Custom branding name for YouTube' \
--OappName=YouTube -e 'Settings for YouTube' \
--OrvxSettingsLabel=Revanced Settings \
+-OappName=YouTube \
+-e 'Settings for YouTube' \
+-OrvxSettingsLabel=Revanced \
 """
 
 [YT-Music]
@@ -39,7 +40,7 @@ patcher-args = """\
 -OappNameNotification=YouTube Music \
 -OappNameLauncher=YT Music \
 -e 'Settings for YouTube Music' \
--OrvxSettingsLabel=Revanced Settings \
+-OrvxSettingsLabel=Revanced \
 """
 
 [Reddit]
@@ -54,7 +55,7 @@ cli-source = "inotia00/revanced-cli"
 patches-version = "dev"
 patcher-args = """\
 -e 'Settings for Reddit' \
--OrvxSettingsLabel=Revanced Settings \
+-OrvxSettingsLabel=Revanced \
 """
 
 [GooglePhotos]
