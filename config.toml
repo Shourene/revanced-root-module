@@ -22,11 +22,10 @@ patcher-args = """\
 -e 'Custom branding name for YouTube' \
 -OappName=YouTube \
 -e 'Settings for YouTube' \
--OrvxSettingsLabel=Revanced \
+-OrvxSettingsLabel='Revanced Settings' \
 """
 
 [YT-Music]
-app-name = "YT Music"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 # uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 arch = "both"
@@ -37,10 +36,10 @@ patches-version = "dev"
 included-patches = "'Custom header for YouTube Music' 'Disable music video in album' 'Hide overlay filter' 'Hide player overlay filter'"
 patcher-args = """\
 -e 'Custom branding name for YouTube Music' \
--OappNameNotification=YouTube Music \
--OappNameLauncher=YT Music \
+-OappNameNotification='YouTube Music' \
+-OappNameLauncher='YT Music' \
 -e 'Settings for YouTube Music' \
--OrvxSettingsLabel=Revanced \
+-OrvxSettingsLabel='Revanced Settings' \
 """
 
 [Reddit]
@@ -55,11 +54,10 @@ cli-source = "inotia00/revanced-cli"
 patches-version = "dev"
 patcher-args = """\
 -e 'Settings for Reddit' \
--OrvxSettingsLabel=Revanced \
+-OrvxSettingsLabel='Revanced Settings' \
 """
 
 [GooglePhotos]
-app-name = "Google Photos"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 arch = "both"
