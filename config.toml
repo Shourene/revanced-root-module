@@ -34,6 +34,7 @@ arch = "both"
 build-mode = "both"
 version = "8.30.54"
 patches-source = "anddea/revanced-patches"
+integrations-source = "anddea/revanced-integrations"
 patches-version = "dev"
 included-patches = "'Custom header for YouTube Music' 'Disable music video in album' 'Hide overlay filter' 'Hide player overlay filter'"
 patcher-args = """\
@@ -45,13 +46,13 @@ patcher-args = """\
 """
 
 [Reddit]
-# apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit/"
-uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit/"
+# uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 arch = "all"
-build-mode = "apk"
-version = "auto"
-patches-source = "anddea/revanced-patches"
-integrations-source = "anddea/revanced-integrations"
+version = "2025.12.1"
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+cli-source = "inotia00/revanced-cli"
 patches-version = "dev"
 patcher-args = """\
 -e 'Settings for Reddit' \
