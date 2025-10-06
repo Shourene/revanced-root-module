@@ -13,4 +13,4 @@ Patches: anddea/patches-3.14.0-dev.9.rvp
 [Changelog](https://github.com/anddea/revanced-patches/releases/tag/v3.14.0-dev.9)  
 
 Skipped:  
-Patches: ReVanced/patches-5.41.0.rvp      
+Patches: ReVanced/patches-5.41.0.rvp        
