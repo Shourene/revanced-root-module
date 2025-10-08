@@ -1,7 +1,6 @@
 enable-magisk-update = true # set this to false if you do not want to receive updates for the module in magisk app
 parallel-jobs = 2
 
-# −−−−
 
 [YouTube]
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
@@ -25,7 +24,7 @@ patcher-args = """\
 -OdarkThemeBackgroundColor=@android:color/black \
 """
 
-[YT-Music]
+[YouTube-Music]
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 # uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 arch = "both"
@@ -62,6 +61,7 @@ patcher-args = """\
 """
 
 [GooglePhotos]
+enabled = false
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 # uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 arch = "both"
