@@ -1,5 +1,5 @@
-YouTube (arm64-v8a): 20.21.37  
 YouTube (arm-v7a): 20.21.37  
+YouTube (arm64-v8a): 20.21.37  
 YouTube-Music (arm-v7a): 8.30.54  
 YouTube-Music (arm64-v8a): 8.30.54  
 
